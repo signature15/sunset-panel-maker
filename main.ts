@@ -1,13 +1,16 @@
-// A working gta6-cover-art-01 entry (Node 22, standard library only): the app is this directory's app/ folder, plain
-// static files a desktop browser loads offline (app/index.html and its ES modules, no library and no network
-// request), and the program hands it in. It copies app/ and screenshots/ from beside this file to /output and writes
-// /output/dossier.json, the summary the judge reads, with the vendored make.fun library. Only the plumbing, not the
-// cover art the bounty asks for: Cover Snap, a plain one-photo square cover with a sunset tint and a bold caption,
-// exported as a 1080 x 1080 PNG. Its two sample photos (app/samples/) were made for make.fun with an image model and
-// are free to use. Build your own GTA-style cover maker in its place, put your 3 or 4 PNG or JPEG screenshots in
-// screenshots/ (the first by name is the cover) and run it.
+// Palm Fever — an offline, GTA-style multi-panel cover studio. Drop in a photo, type a caption, and it composes
+// Vice City-style cover art in the browser: a full-bleed canvas mosaic of 8 photo panels, each cropped, zoomed and
+// panned by hand, graded like ink-comic print (heavy contrast, punchy saturation, duotone sunset tints, halftone
+// dots) and finished with gold-framed role ribbons. Over it all goes bold gradient lettering with a hard outline,
+// classic box-art style, driven by whatever caption and subtitle you give it. Three export sizes cover the usual
+// placements: 1080x1080 square, 1080x1350 portrait, and 1920x1080 wide. The whole thing is plain static files
+// (app/index.html and its ES modules) — no library, no build step, no network request — so it runs from a file
+// server on an airgapped machine.
 //
-// Serve it locally with `node serve.ts`, then open http://localhost:8080.
+// This entry script is the packaging around that app: it copies app/ and screenshots/ from beside this file into
+// /output and writes /output/dossier.json (via the vendored make.fun library) for the judge. Its two sample photos
+// (app/samples/) were made for make.fun with an image model and are free to use. Serve it locally with
+// `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 

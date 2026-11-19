@@ -1,0 +1,3 @@
+# Palm Fever Cover Studio
+
+Palm Fever is an offline, GTA-style multi-panel cover studio that turns a photo and a caption into Vice City-style cover art. It builds a full-bleed canvas mosaic of 8 photo panels — each individually cropped, zoomed and panned — graded like ink-comic print with heavy contrast, punchy saturation, duotone sunset tints and halftone dots, then lays bold gradient lettering with a hard outline over the whole composition. Exports come in three sizes (1080x1080 square, 1080x1350 portrait, 1920x1080 wide), and the entire app is plain static files with no library, no build step and no network request, so it runs entirely on a local machine.
